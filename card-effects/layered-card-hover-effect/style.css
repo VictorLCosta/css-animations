@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.vl-card {
+    background-color: #fff;
+    width: 320px;
+    height: 320px;
+    position: relative;
+    border: 4px;
+}
+
+.vl-card:before,
+.vl-card:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all 0.25s;
+    z-index: -1;
+}
+
+.vl-card:hover:before {
+    transform: rotate(20deg);
+}
+
+.vl-card:hover:after {
+    transform: rotate(13deg);
+}
+
+.vl-card:hover .imgbox {
+    bottom: 80px;
+}
+
+.imgbox {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    transition: all 0.5s;
+}
+
+.imgbox img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.details h2 {
+    margin-bottom: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.details span {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    color: tomato;
+}
