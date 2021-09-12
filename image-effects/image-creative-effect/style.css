@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    background-color: #222;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.vl-container {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.vl-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.vl-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 250%;
+    background-color: #2d3436;
+    opacity: 0.8;
+    transform: translate(550px, 300px) rotate(45deg);
+    transition: all 0.5s;
+}
+
+.vl-container:hover:before {
+    transform: translate(-150px, -150px) rotate(45deg);
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+}
+
+.caption h2 {
+    text-align: center;
+    font-size: 17px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translate(200px, -200px);
+    transition: all 0.25s;
+}
+
+.vl-container:hover h2 {
+    transform: translate(0, 0);
+}
+
+.caption a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    align-self: center;
+    text-align: center;
+    width: 100px;
+    padding: 15px;
+    transform: translateY(100px);
+    transition: all 0.25s;
+}
+
+.caption p {
+    font-size: 16px;
+    width: 80%;
+    align-self: center;
+    text-align: center;
+    transition: all 0.25s;
+    transform: translate(200px, -200px);
+}
+
+.vl-container:hover p {
+    transform: translate(0, 0);
+}
+
+.vl-container:hover a {
+    transform: translateY(0);
+}
