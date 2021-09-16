@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    background-color: #10ac84;
+}
+
+.btn-skewed {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 2rem 4rem;
+    font-size: 3rem;
+    letter-spacing: 7px;
+}
+
+.btn-skewed:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: -1%;
+    top: -5px;
+    z-index: -1;
+    transform: skewX(30deg);
+    background-color: #ee5253;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-skewed:hover:before {
+    transform: skewX(0deg);
+    left: 50%;
+    top: 0;
+}
+
+.btn-skewed:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 51%;
+    top: 5px;
+    z-index: -1;
+    background-color: #0a3d52;
+    transform: skewX(30deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-skewed:hover:after {
+    transform: skewX(0deg);
+    left: 0%;
+    top: 0;
+}
