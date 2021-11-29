@@ -56,6 +56,10 @@ html {
     display: none;
 }
 
+#menu-btn.active {
+    transform: skew(-180deg) rotate(-90deg);
+}
+
 .header .icons * {
     font-size: 2rem;
     padding: 0 .5rem;
