@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+    --red: #ff5a3c;
+    --light-red: #f9edeb;
+}
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    transition: all .3s linear;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    width: 35rem;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.box .box-img {
+    width: 35rem;
+    overflow: hidden;
+}
+
+.box .box-img .info {
+    position: absolute;
+    top: 2%; left: 2%;
+    display: flex;
+    gap: .5rem;
+}
+
+.box .box-img .info h3 {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding: .5rem;
+    border-radius: .3rem;
+    text-transform: capitalize;
+}
+
+.box .box-img .icons {
+    position: absolute;
+    right: 2%; top: 42%;
+    display: flex;
+    align-items: center;
+    gap: 0 .4rem;
+}
+
+.box .box-img .icons a {
+    color: #fff;
+    font-size: 1.4rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: .5rem;
+    border-radius: .3rem;
+}
+
+.box .box-img .icons a:hover {
+    background: var(--red);
+}
+
+.box .box-img .icons a h3 {
+    display: inline-block;
+    font-weight: 300;
+    margin-left: .3rem;
+}
+
+.box .box-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.box .box-img img:hover {
+    transform: scale(1.2);
+}
+
+.box .box-content {
+    padding: 1rem;
+}
+
+.box .box-content .price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.box .box-content .price h3 {
+    margin-right: auto;
+    font-size: 1.7rem;
+    color: var(--red);
+}
+
+.box .box-content .price a {
+    color: #222;
+    font-size: 1.6rem;
+    background: rgba(0, 0, 0, 0.1);
+    margin-left: .5rem;
+    border-radius: .2rem;
+    padding: 1rem;
+}
+
+.box .box-content .price a:hover {
+    color: #fff;
+    background: var(--red);
+}
+
+.box .box-content .locations {
+    margin: .8rem 0;
+}
+
+.box .box-content .locations h3 {
+    font-size: 2.2rem;
+}
+
+.box .box-content .locations p {
+    margin-top: .4rem;
+    font-size: 1.3rem;
+}
+
+.box .box-content .details {
+    display: flex;
+    justify-content: center;
+    gap: 0 1.2rem;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+}
+
+.box .box-content .details h3 {
+    color: #222;
+    padding: .8rem .6rem;
+    border-radius: .3rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.box .box-content .actions {
+    display: flex;
+    gap: 0 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.box .box-content .actions .btn-action {
+    color: var(--red);
+    background: var(--light-red);
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.box .box-content .actions .btn-action:hover {
+    background: var(--red);
+    color: #fff;
+}
