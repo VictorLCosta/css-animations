@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0; padding: 0;
+    outline: none; border: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all .2s linear;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-card {
+    position: relative;
+    width: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: .9rem;
+}
+
+.action {
+    color: rgb(131,58,180);
+    padding: 1rem .5rem;
+    background: none;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.blog-card .blog-card-header {
+    padding: 1rem 1.5rem;
+}
+
+.blog-card .blog-card-header .title {
+    font-size: 2.5rem;
+    margin-bottom: .8rem;
+    color: #2b3d59;
+}
+
+.blog-card .blog-card-header .sub-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #6784b6;
+}
+
+.blog-card .blog-card-image {
+    overflow: hidden;
+}
+
+.blog-card .blog-card-image img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.blog-card .blog-card-bottom {
+    padding: 1.5rem 1.5rem;
+}
+
+.blog-card .blog-card-bottom .bottom-text {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.blog-card .blog-card-bottom .actions-card {
+    margin-top: 1rem;
+}
