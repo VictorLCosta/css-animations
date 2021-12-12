@@ -1,0 +1,17 @@
+.box-container {
+    --w1: 100rem;
+    --n: 3;
+
+    --w2: 60rem;
+    --m: 2;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(clamp(
+        100%/(var(--n) + 1) + 0.1%, 
+      (var(--w1) - 100vw)*1000,
+         100%/(var(--m) + 1) + 0.1%), 
+      (var(--w2) - 100vw)*1000,
+           100%), 1fr));
+    justify-items: center;
+    gap: 1.5rem;
+}
