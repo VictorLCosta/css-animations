@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0; margin: 0;
+    border: none; outline: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    transition: all .2s linear;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #343a40;
+}
+
+.accordion {
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.accordion-item {
+    padding: 2.5rem 1.5rem;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.accordion-item .accordion-header {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #087f5b;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-item .accordion-header span {
+    margin-right: 1.5rem;
+}
+
+.accordion-item .accordion-header:hover i {
+    transform: rotate(180deg);
+}
+
+.accordion-item .accordion-header h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-right: auto;
+}
+
+.accordion-item .accordion-header i {
+    margin-right: 3rem;
+}
+
+.accordion-item .accordion-body {
+    padding: 0 4rem;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+
+.accordion-item .accordion-body p {
+    line-height: 1.5;
+    margin-bottom: 2.2rem;
+}
+
+.accordion-item .accordion-body ul {
+    color: #868e96;
+    margin-left: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.closed {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.opened {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
